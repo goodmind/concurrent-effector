@@ -1,13 +1,14 @@
 {
-  "main.css": "/concurrent-effector/static/css/main.52c1b004.chunk.css",
-  "main.js": "/concurrent-effector/static/js/main.d3bbbcb2.chunk.js",
-  "main.js.map": "/concurrent-effector/static/js/main.d3bbbcb2.chunk.js.map",
-  "static/js/1.10b04d38.chunk.js": "/concurrent-effector/static/js/1.10b04d38.chunk.js",
-  "static/js/1.10b04d38.chunk.js.map": "/concurrent-effector/static/js/1.10b04d38.chunk.js.map",
+  "main.css": "/concurrent-effector/static/css/main.1eb5f6c5.chunk.css",
+  "main.js": "/concurrent-effector/static/js/main.46f21d1e.chunk.js",
+  "main.js.map": "/concurrent-effector/static/js/main.46f21d1e.chunk.js.map",
+  "static/js/1.ba2803b1.chunk.js": "/concurrent-effector/static/js/1.ba2803b1.chunk.js",
+  "static/js/1.ba2803b1.chunk.js.map": "/concurrent-effector/static/js/1.ba2803b1.chunk.js.map",
   "runtime~main.js": "/concurrent-effector/static/js/runtime~main.b0afbf41.js",
   "runtime~main.js.map": "/concurrent-effector/static/js/runtime~main.b0afbf41.js.map",
-  "static/css/main.52c1b004.chunk.css.map": "/concurrent-effector/static/css/main.52c1b004.chunk.css.map",
+  "static/media/favicon.png": "/concurrent-effector/static/media/favicon.ce1a3ad9.png",
+  "static/css/main.1eb5f6c5.chunk.css.map": "/concurrent-effector/static/css/main.1eb5f6c5.chunk.css.map",
   "index.html": "/concurrent-effector/index.html",
-  "precache-manifest.009af500217a5c2b0ceb49e535afbdbb.js": "/concurrent-effector/precache-manifest.009af500217a5c2b0ceb49e535afbdbb.js",
+  "precache-manifest.6318da57d2f011eb2971cba731cdbfbe.js": "/concurrent-effector/precache-manifest.6318da57d2f011eb2971cba731cdbfbe.js",
   "service-worker.js": "/concurrent-effector/service-worker.js"
 }
