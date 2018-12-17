@@ -10,18 +10,25 @@ import * as Traditional from "./traditional";
 
 let intervals = new Set();
 
+console.warn(`
+Please set window.INTERVAL1_TIME and window.INTERVAL2_TIME and start timers
+
+window.INTERVAL1_TIME = 15;
+window.INTERVAL1_TIME = 50;
+`);
+
 const startInterval = () => {
   intervals.add(
     setInterval(() => {
       form.updateFirstName(faker.name.firstName());
       form.updateLastName(faker.name.lastName());
-    }, 150)
+    }, window.INTERVAL1_TIME || 15)
   );
   intervals.add(
     setInterval(() => {
       form.updateFirstName("empty");
       form.updateLastName("empty");
-    }, 500)
+    }, window.INTERVAL2_TIME || 50)
   );
 };
 

@@ -21,14 +21,14 @@ export function appModel() {
       setInterval(() => {
         setFirstName(faker.name.firstName());
         setLastName(faker.name.lastName());
-      }, 15)
+      }, window.INTERVAL1_TIME || 15)
     );
 
     intervals.add(
       setInterval(() => {
         setFirstName("empty");
         setLastName("empty");
-      }, 50)
+      }, window.INTERVAL2_TIME || 15)
     );
   };
 
