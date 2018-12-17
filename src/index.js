@@ -8,30 +8,21 @@ import * as serviceWorker from "./serviceWorker";
 
 const search = qs.parse(window.location.search);
 
-console.log(React);
+let app;
 
 if ("context" in search) {
-  ReactDOM.render(
-    <React.ConcurrentMode>
-      <ContextApp />
-    </React.ConcurrentMode>,
-    document.getElementById("root")
-  );
+  app = <ContextApp />;
 } else if ("hooks" in search) {
-  ReactDOM.render(
-    <React.ConcurrentMode>
-      <HooksApp />
-    </React.ConcurrentMode>,
-    document.getElementById("root")
-  );
+  app = <HooksApp />;
 } else {
-  ReactDOM.render(
-    <React.ConcurrentMode>
-      <TraditionalApp />
-    </React.ConcurrentMode>,
-    document.getElementById("root")
-  );
+  app = <TraditionalApp />;
 }
+
+if ("concurrent" in search) {
+  app = <React.ConcurrentMode>{app}</React.ConcurrentMode>;
+}
+
+ReactDOM.render(app, document.getElementById("root"));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
