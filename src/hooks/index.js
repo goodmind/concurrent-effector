@@ -1,6 +1,7 @@
 import React from "react";
 
 import nanoid from "nanoid";
+import logo from "../favicon.png";
 import { bindModel, useComponentModel } from "./utils";
 
 import { appModel } from "./app-model";
@@ -27,6 +28,7 @@ export function HooksApp() {
         <button onClick={stopAllIntervals}>stop all intervals</button>
         <button onClick={addIntervals}>add intervals</button>
         <h1>Hello Hooks</h1>
+        <img width="100" alt="Effector" src={logo} />
         {ids.map(key => (
           <div key={key}>
             <input onChange={setFirstName} value={firstName} />

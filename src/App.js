@@ -3,6 +3,7 @@ import React from "react";
 import { createEvent } from "effector";
 import faker from "faker";
 import nanoid from "nanoid";
+import logo from "./favicon.png";
 import { form } from "./store";
 
 import * as Context from "./context";
@@ -44,6 +45,7 @@ export function ContextApp() {
           <button onClick={stopAllIntervals}>stop intervals</button>
           <button onClick={startInterval}>start intervals</button>
           <h1>Hello Context</h1>
+          <img width="100" alt="Effector" src={logo} />
           {ids.map(key => (
             <div key={key}>
               <Context.FirstNameInput />
@@ -64,6 +66,7 @@ export function TraditionalApp() {
         <button onClick={stopAllIntervals}>pause</button>
         <button onClick={startInterval}>play</button>
         <h1>Hello Traditional</h1>
+        <img width="100" alt="Effector" src={logo} />
         {ids.map(key => (
           <div key={key}>
             <Traditional.FirstNameInput />
