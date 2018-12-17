@@ -3,11 +3,20 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "react": "^16.6.3",
-    "react-dom": "^16.6.3",
+    "effector": "^0.18.0-rc.1",
+    "effector-react": "^0.18.0-rc.1",
+    "faker": "^4.1.0",
+    "gh-pages": "^2.0.1",
+    "nanoid": "^2.0.0",
+    "query-string": "^6.2.0",
+    "react": "^16.7.0-alpha.2",
+    "react-composer": "^5.0.1",
+    "react-dom": "^16.7.0-alpha.2",
     "react-scripts": "2.1.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -16,6 +25,7 @@
   "eslintConfig": {
     "extends": "react-app"
   },
+  "homepage": "https://goodmind.github.io/concurrent-effector",
   "browserslist": [
     ">0.2%",
     "not dead",
