@@ -1,13 +1,13 @@
 {
   "main.css": "/concurrent-effector/static/css/main.52c1b004.chunk.css",
-  "main.js": "/concurrent-effector/static/js/main.bd171236.chunk.js",
-  "main.js.map": "/concurrent-effector/static/js/main.bd171236.chunk.js.map",
-  "static/js/1.562ef526.chunk.js": "/concurrent-effector/static/js/1.562ef526.chunk.js",
-  "static/js/1.562ef526.chunk.js.map": "/concurrent-effector/static/js/1.562ef526.chunk.js.map",
+  "main.js": "/concurrent-effector/static/js/main.c44d803a.chunk.js",
+  "main.js.map": "/concurrent-effector/static/js/main.c44d803a.chunk.js.map",
+  "static/js/1.d2cad67f.chunk.js": "/concurrent-effector/static/js/1.d2cad67f.chunk.js",
+  "static/js/1.d2cad67f.chunk.js.map": "/concurrent-effector/static/js/1.d2cad67f.chunk.js.map",
   "runtime~main.js": "/concurrent-effector/static/js/runtime~main.b0afbf41.js",
   "runtime~main.js.map": "/concurrent-effector/static/js/runtime~main.b0afbf41.js.map",
   "static/css/main.52c1b004.chunk.css.map": "/concurrent-effector/static/css/main.52c1b004.chunk.css.map",
   "index.html": "/concurrent-effector/index.html",
-  "precache-manifest.d776c49189e3c22b7cb5753c12559a39.js": "/concurrent-effector/precache-manifest.d776c49189e3c22b7cb5753c12559a39.js",
+  "precache-manifest.790d1c7846b4a47fa2dc0ef7304f3c3c.js": "/concurrent-effector/precache-manifest.790d1c7846b4a47fa2dc0ef7304f3c3c.js",
   "service-worker.js": "/concurrent-effector/service-worker.js"
 }
