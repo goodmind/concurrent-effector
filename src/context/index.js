@@ -22,6 +22,7 @@ const storeConsumers = storeProvider.map(state =>
     .map(Component => <Component />)
 );
 const pushStore = createEvent();
+(window.events || (window.events = {})).pushStore = pushStore;
 
 storeProvider.on(pushStore, (state, store) => {
   if (state.has(store.id)) return state;

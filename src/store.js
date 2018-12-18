@@ -7,6 +7,11 @@ const createForm = () => {
   const updateLastName = createEvent();
   const changeLastName = createEvent();
 
+  (window.events || (window.events = {})).updateFirstName = updateFirstName;
+  (window.events || (window.events = {})).changeFirstName = changeFirstName;
+  (window.events || (window.events = {})).updateLastName = updateLastName;
+  (window.events || (window.events = {})).changeLastName = changeLastName;
+
   const firstName = restoreEvent(updateFirstName, faker.name.firstName());
   const lastName = restoreEvent(updateLastName, faker.name.lastName());
 

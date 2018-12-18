@@ -1,6 +1,5 @@
 import React from "react";
 
-import { createEvent } from "effector";
 import faker from "faker";
 import nanoid from "nanoid";
 import logo from "./favicon.png";
