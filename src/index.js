@@ -18,13 +18,14 @@ if ("context" in search) {
   app = <TraditionalApp />;
 }
 
-if ("concurrent" in search) {
-  app = <React.ConcurrentMode>{app}</React.ConcurrentMode>;
-}
+// if ("concurrent" in search) {
+//   app = <React.ConcurrentMode>{app}</React.ConcurrentMode>;
+// }
 
-const root = document.getElementById("root")
+const container = document.getElementById("root");
+const root = ReactDOM.createRoot(container);
 
-ReactDOM.createRoot(root).render(app);
+root.render(app);
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
