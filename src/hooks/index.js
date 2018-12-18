@@ -25,8 +25,12 @@ export function HooksApp() {
   return (
     <React.StrictMode>
       <div className="App">
-        <button onClick={stopAllIntervals}>stop all intervals</button>
-        <button onClick={addIntervals}>add intervals</button>
+        <button id="stop" onClick={stopAllIntervals}>
+          stop all intervals
+        </button>
+        <button id="start" onClick={addIntervals}>
+          add intervals
+        </button>
         <h1>Hello Hooks</h1>
         <img width="100" alt="Effector" src={logo} />
         {ids.map(key => (

@@ -17,7 +17,7 @@ window.INTERVAL1_TIME = 15;
 window.INTERVAL1_TIME = 50;
 `);
 
-const startInterval = () => {
+const addIntervals = () => {
   intervals.add(
     setInterval(() => {
       form.updateFirstName(faker.name.firstName());
@@ -34,6 +34,9 @@ const startInterval = () => {
 
 const stopAllIntervals = () => intervals.forEach(clearInterval);
 
+(window.events || (window.events = {})).addIntervals = addIntervals;
+(window.events || (window.events = {})).stopAllIntervals = stopAllIntervals;
+
 const ids = Array.from({ length: 50 }).map(() => nanoid());
 
 export function ContextApp() {
@@ -41,8 +44,12 @@ export function ContextApp() {
     <React.StrictMode>
       <Context.StoreProvider>
         <div className="App">
-          <button onClick={stopAllIntervals}>stop intervals</button>
-          <button onClick={startInterval}>start intervals</button>
+          <button id="stop" onClick={stopAllIntervals}>
+            stop all intervals
+          </button>
+          <button id="start" onClick={addIntervals}>
+            add intervals
+          </button>
           <h1>Hello Context</h1>
           <img width="100" alt="Effector" src={logo} />
           {ids.map(key => (
@@ -62,8 +69,12 @@ export function TraditionalApp() {
   return (
     <React.StrictMode>
       <div className="App">
-        <button onClick={stopAllIntervals}>pause</button>
-        <button onClick={startInterval}>play</button>
+        <button id="stop" onClick={stopAllIntervals}>
+          stop all intervals
+        </button>
+        <button id="start" onClick={addIntervals}>
+          add intervals
+        </button>
         <h1>Hello Traditional</h1>
         <img width="100" alt="Effector" src={logo} />
         {ids.map(key => (

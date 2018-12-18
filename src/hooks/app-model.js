@@ -34,6 +34,9 @@ export function appModel() {
 
   const stopAllIntervals = () => intervals.forEach(clearInterval);
 
+  (window.events || (window.events = {})).addIntervals = addIntervals;
+  (window.events || (window.events = {})).stopAllIntervals = stopAllIntervals;
+
   return {
     setFirstName,
     setLastName,
