@@ -7,7 +7,7 @@
     "effector-react": "^0.18.0-rc.1",
     "faker": "^4.1.0",
     "gh-pages": "^2.0.1",
-    "nanoid": "^2.0.0",
+    "nanoid": "^3.1.31",
     "query-string": "^6.2.0",
     "react": "^16.7.0-alpha.2",
     "react-composer": "^5.0.1",
